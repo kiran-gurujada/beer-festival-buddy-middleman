@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+  <head>
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta charset="utf-8">
+    <meta content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport">
+
+    <!-- Use title if it's in the page YAML frontmatter -->
+    <title><%= current_page.data.title || "Middleman" %></title>
+
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans|Patua+One" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+    <%= stylesheet_link_tag :site %>
+    <%= javascript_include_tag :all %>
+  </head>
+
+  <body class="<%= page_classes %>">
+    <%= yield %>
+    <footer>
+      &copy; 2016 Beer Festival Buddy
+    </footer>
+    <!-- Start of Async Prefinery Code -->
+    <script type="text/javascript">var _pfy = _pfy || [];(function(){function pfy_load(){var pfys=document.createElement('script');pfys.type='text/javascript';pfys.async=true;pfys.src='https://widget.prefinery.com/widget/v2/l2m94qxj.js';var pfy=document.getElementsByTagName('script')[0];pfy.parentNode.insertBefore(pfys,pfy);}if (window.attachEvent){window.attachEvent('onload',pfy_load);}else{window.addEventListener('load',pfy_load,false);}})();</script>
+    <!-- End of Async Prefinery Code -->
+  </body>
+</html>
