@@ -406,48 +406,89 @@ textarea {
 
 /* line 4, site.css.scss */
 body {
-  background: #4A148C;
-  background-attachment: fixed;
-  background-image: url("/images/bg.jpg");
-  background-size: cover;
-  background-blend-mode: multiply;
-  text-align: center;
+  background-color: #E0E0E0;
   font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 1em; }
+  font-size: 1em;
+  padding-top: 60px; }
 
-/* line 15, site.css.scss */
+/* line 11, site.css.scss */
+.wrap {
+  width: 1060px;
+  margin: 0 auto; }
+
+/* line 16, site.css.scss */
+header {
+  background: #4A148C;
+  text-align: left;
+  line-height: 60px;
+  position: fixed;
+  top: 0;
+  width: 100%; }
+
+/* line 25, site.css.scss */
+header .logo {
+  font-family: "Patua One", "Georgia", serif;
+  color: #fff;
+  text-decoration: none;
+  font-size: 24px; }
+
+/* line 32, site.css.scss */
 .logo img {
   height: 11.75em;
   margin-top: 2.6em; }
 
-/* line 20, site.css.scss */
+/* line 37, site.css.scss */
 h1 {
   color: #fff;
   font-family: "Patua One", "Georgia", serif;
   font-size: 2.5em;
   letter-spacing: 1px;
-  margin: 0.4em 0 0.6em 0; }
+  margin: 0; }
 
-/* line 28, site.css.scss */
-p.intro {
-  color: #fff;
-  font-family: "Noto Sans", "Helvetica Neue", Arial, sans-serif;
-  font-size: 1.1em;
-  font-weight: 300;
-  line-height: 1.5;
-  margin: 0 0 2.4em 0; }
-
-/* line 37, site.css.scss */
-.prefinery-form-embed {
-  padding: 0 15%; }
-
-/* line 41, site.css.scss */
-.welcome {
-  padding: 0 22% 0px 22%;
+/* line 45, site.css.scss */
+.intro {
+  display: inline-block;
+  padding-top: 70px;
+  width: 530px;
+  vertical-align: top;
   -webkit-animation-name: welcome;
   -webkit-animation-duration: .9s; }
 
-/* line 47, site.css.scss */
+/* line 54, site.css.scss */
+.iphones-container {
+  display: inline-block;
+  text-align: center;
+  margin-left: 120px;
+  width: 320px;
+  -webkit-animation-name: welcome;
+  -webkit-animation-duration: .9s; }
+
+/* line 63, site.css.scss */
+.iphones-container img {
+  width: 100%; }
+
+/* line 67, site.css.scss */
+.intro p {
+  color: #fff;
+  font-family: "Noto Sans", "Helvetica Neue", Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.5;
+  margin: 24px 0 24px 0; }
+
+/* line 76, site.css.scss */
+.prefinery-form-embed {
+  width: 500px; }
+
+/* line 80, site.css.scss */
+.welcome {
+  background: #7B1FA2;
+  background-image: url("/images/bg.jpg");
+  background-size: cover;
+  background-blend-mode: multiply;
+  padding: 40px 0; }
+
+/* line 88, site.css.scss */
 h2 {
   color: #fff;
   font-family: "Patua One", "Georgia", serif;
@@ -455,43 +496,65 @@ h2 {
   letter-spacing: 1.5px;
   margin: 0.4em 0 0.6em 0; }
 
-/* line 55, site.css.scss */
+/* line 96, site.css.scss */
 .user-pitch {
-  background: #33691E;
+  background: #fff;
   padding: 50px 10%;
   height: 200px;
   text-align: left;
   display: flex;
   flex-direction: row; }
 
-/* line 64, site.css.scss */
+/* line 105, site.css.scss */
 .user-pitch img {
   height: 400px;
   margin-top: -100px; }
 
-/* line 69, site.css.scss */
+/* line 110, site.css.scss */
 .user-pitch ul {
   flex: 1;
   color: #fff; }
 
-/* line 74, site.css.scss */
+/* line 115, site.css.scss */
 .festival-pitch {
   background: #212121;
   padding: 100px 10% 50px 10%; }
 
-/* line 79, site.css.scss */
+/* line 120, site.css.scss */
 footer {
-  color: #fff;
-  line-height: 80px;
-  text-align: center; }
+  color: #424242;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 60px; }
 
-/* line 85, site.css.scss */
+/* line 127, site.css.scss */
+.copyright {
+  display: inline-block;
+  width: 530px; }
+
+/* line 132, site.css.scss */
+.footer-links {
+  display: inline-block;
+  width: 525px;
+  text-align: right; }
+
+/* line 138, site.css.scss */
+.footer-links a {
+  color: #424242;
+  margin-left: 12px;
+  text-decoration: none; }
+
+/* line 144, site.css.scss */
+.footer-links a:hover {
+  text-decoration: underline; }
+
+/* line 148, site.css.scss */
 .feature-list {
   color: #fff;
   list-style: none;
   text-align: left; }
 
-/* line 94, site.css.scss */
+/* line 157, site.css.scss */
 .feature-list li:before {
   content: "\f00c";
   /* FontAwesome Unicode */
