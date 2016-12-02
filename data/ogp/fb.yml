@@ -1,0 +1,8 @@
+image:
+  '': http://www.beerfestivalbuddy.com/images/default.png
+  secure_url: https://raw.githubusercontent.com/matoakley/beer-festival-buddy-middleman/gh-pages/images/default.png
+  type: image/png
+  width: 2000
+  height: 1020
+locale:
+  '': en_gb

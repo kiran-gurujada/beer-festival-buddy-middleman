@@ -8,6 +8,10 @@
     <!-- Use title if it's in the page YAML frontmatter -->
     <title><%= current_page.data.title || "Beer Festival Buddy" %></title>
 
+    <%- ogp_tags do |name, value| %>
+      <meta property="<%= name %>" content="<%= value %>" />
+    <% end %>
+
     <link href="https://fonts.googleapis.com/css?family=Noto+Sans|Patua+One" rel="stylesheet">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 
