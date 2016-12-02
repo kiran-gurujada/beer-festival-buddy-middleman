@@ -16,9 +16,20 @@
   </head>
 
   <body class="<%= page_classes %>">
+    <header>
+      <div class="wrap">
+        <a href="#" class="logo">Beer Festival Buddy</a>
+      </div>
+    </header>
     <%= yield %>
     <footer>
-      &copy; 2016 Beer Festival Buddy
+      <div class="wrap">
+        <div class="copyright">Beer Festival Buddy &copy; <%= Date.today.year %></div>
+        <div class="footer-links">
+          <a href="https://www.facebook.com/BeerFestivalBuddy">Facebook</a>
+          <a href="https://twitter.com/BeerFestBuddy">Twitter</a>
+        </div>
+      </div>
     </footer>
     <!-- Start of Async Prefinery Code -->
     <script type="text/javascript">var _pfy = _pfy || [];(function(){function pfy_load(){var pfys=document.createElement('script');pfys.type='text/javascript';pfys.async=true;pfys.src='https://widget.prefinery.com/widget/v2/l2m94qxj.js';var pfy=document.getElementsByTagName('script')[0];pfy.parentNode.insertBefore(pfys,pfy);}if (window.attachEvent){window.attachEvent('onload',pfy_load);}else{window.addEventListener('load',pfy_load,false);}})();</script>

@@ -2,14 +2,31 @@
 @import "normalize";
 
 body {
-  background: #4A148C;
-  background-attachment: fixed;
-  background-image: image-url('bg.jpg');
-  background-size: cover;
-  background-blend-mode: multiply;
-  text-align: center;
+  background-color: #E0E0E0;
   font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 1em;
+  padding-top: 60px;
+}
+
+.wrap {
+  width: 1060px;
+  margin: 0 auto;
+}
+
+header {
+  background: #4A148C;
+  text-align: left;
+  line-height: 60px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+header .logo {
+  font-family: "Patua One", "Georgia", serif;
+  color: #fff;
+  text-decoration: none;
+  font-size: 24px;
 }
 
 .logo img {
@@ -22,26 +39,50 @@ h1 {
   font-family: "Patua One", "Georgia", serif;
   font-size: 2.5em;
   letter-spacing: 1px;
-  margin: 0.4em 0 0.6em 0;
+  margin: 0;
 }
 
-p.intro {
+.intro {
+  display: inline-block;
+  padding-top: 70px;
+  width: 530px;
+  vertical-align: top;
+  -webkit-animation-name: welcome;
+  -webkit-animation-duration: .9s;
+}
+
+.iphones-container {
+  display: inline-block;
+  text-align: center;
+  margin-left: 120px;
+  width: 320px;
+  -webkit-animation-name: welcome;
+  -webkit-animation-duration: .9s;
+}
+
+.iphones-container img {
+  width: 100%;
+}
+
+.intro p {
   color: #fff;
   font-family: "Noto Sans", "Helvetica Neue", Arial, sans-serif;
-  font-size: 1.1em;
+  font-size: 16px;
   font-weight: 300;
   line-height: 1.5;
-  margin: 0 0 2.4em 0;
+  margin: 24px 0 24px 0;
 }
 
 .prefinery-form-embed {
-  padding: 0 15%;
+  width: 500px;
 }
 
 .welcome {
-  padding: 0 22% 0px 22%;
-  -webkit-animation-name: welcome;
-  -webkit-animation-duration: .9s;
+  background: #7B1FA2;
+  background-image: image-url('bg.jpg');
+  background-size: cover;
+  background-blend-mode: multiply;
+  padding: 40px 0;
 }
 
 h2 {
@@ -53,7 +94,7 @@ h2 {
 }
 
 .user-pitch {
-  background: #33691E;
+  background: #fff;
   padding: 50px 10%;
   height: 200px;
   text-align: left;
@@ -77,9 +118,31 @@ h2 {
 }
 
 footer {
-  color: #fff;
-  line-height: 80px;
-  text-align: center;
+  color: #424242;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 60px;
+}
+
+.copyright {
+  display: inline-block;
+  width: 530px;
+}
+
+.footer-links {
+  display: inline-block;
+  width: 525px;
+  text-align: right;
+}
+
+.footer-links a {
+  color: #424242;
+  margin-left: 12px;
+  text-decoration: none;
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
 }
 
 .feature-list {
