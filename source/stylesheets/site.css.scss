@@ -5,20 +5,17 @@ body {
   background-color: #E0E0E0;
   font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 1em;
-  padding-top: 60px;
 }
 
 .wrap {
-  width: 1060px;
+  width: 85%;
   margin: 0 auto;
 }
 
 header {
   background: #4A148C;
-  text-align: left;
+  text-align: center;
   line-height: 60px;
-  position: fixed;
-  top: 0;
   width: 100%;
 }
 
@@ -37,25 +34,31 @@ header .logo {
 h1 {
   color: #fff;
   font-family: "Patua One", "Georgia", serif;
-  font-size: 2.5em;
+  font-size: 42px;
   letter-spacing: 1px;
   margin: 0;
 }
 
+.welcome {
+  background: #7B1FA2;
+  background-image: image-url('bg.jpg');
+  background-size: cover;
+  background-blend-mode: multiply;
+  padding: 40px 0;
+  text-align: center;
+}
+
 .intro {
-  display: inline-block;
-  padding-top: 70px;
-  width: 530px;
+  flex: 1;
   vertical-align: top;
   -webkit-animation-name: welcome;
   -webkit-animation-duration: .9s;
+  margin-bottom: 40px;
 }
 
 .iphones-container {
-  display: inline-block;
   text-align: center;
-  margin-left: 120px;
-  width: 320px;
+  flex: 1;
   -webkit-animation-name: welcome;
   -webkit-animation-duration: .9s;
 }
@@ -67,71 +70,28 @@ h1 {
 .intro p {
   color: #fff;
   font-family: "Noto Sans", "Helvetica Neue", Arial, sans-serif;
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 300;
   line-height: 1.5;
   margin: 24px 0 24px 0;
 }
 
-.prefinery-form-embed {
-  width: 500px;
-}
-
-.welcome {
-  background: #7B1FA2;
-  background-image: image-url('bg.jpg');
-  background-size: cover;
-  background-blend-mode: multiply;
-  padding: 40px 0;
-}
-
-h2 {
-  color: #fff;
-  font-family: "Patua One", "Georgia", serif;
-  font-size: 1.75em;
-  letter-spacing: 1.5px;
-  margin: 0.4em 0 0.6em 0;
-}
-
-.user-pitch {
-  background: #fff;
-  padding: 50px 10%;
-  height: 200px;
-  text-align: left;
-  display: flex;
-  flex-direction: row;
-}
-
-.user-pitch img {
-  height: 400px;
-  margin-top: -100px;
-}
-
-.user-pitch ul {
-  flex: 1;
-  color: #fff;
-}
-
-.festival-pitch {
-  background: #212121;
-  padding: 100px 10% 50px 10%;
-}
-
 footer {
   color: #424242;
+  display: flex;
+  flex: 1;
+  flex-direction: row;
   font-size: 12px;
   font-weight: 500;
   line-height: 60px;
 }
 
 .copyright {
-  display: inline-block;
-  width: 530px;
+  flex: 1;
 }
 
 .footer-links {
-  display: inline-block;
-  width: 525px;
+  flex: 1;
   text-align: right;
 }
 
@@ -143,23 +103,6 @@ footer {
 
 .footer-links a:hover {
   text-decoration: underline;
-}
-
-.feature-list {
-  color: #fff;
-  list-style: none;
-  text-align: left;
-}
-
-.feature-list li {
-}
-
-.feature-list li:before {
-  content: "\f00c"; /* FontAwesome Unicode */
-  font-family: FontAwesome;
-  display: inline-block;
-  margin-left: -1.3em; /* same as padding-left set on li */
-  width: 1.3em; /* same as padding-left set on li */
 }
 
 @-webkit-keyframes welcome {
@@ -178,5 +121,73 @@ footer {
   }
   to {
     -webkit-transform: scale(1);
+  }
+}
+
+$breakpoint-tablet: 768px;
+@media (min-width: $breakpoint-tablet) {
+  body {
+    padding-top: 60px;
+  }
+
+  .wrap {
+    width: 90%;
+  }
+
+  header {
+    position: fixed;
+    top: 0;
+    text-align: left;
+  }
+
+  h1 {
+    font-size: 32px;
+  }
+
+  .welcome {
+    text-align: left;
+    padding: 30px 0;
+  }
+
+  .welcome > .wrap {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .intro {
+    display: inline-block;
+    flex: 4;
+    -webkit-animation-name: welcome;
+    -webkit-animation-duration: .9s;
+    margin: 0;
+  }
+
+  .iphones-container {
+    flex: 3;
+    text-align: right;
+  }
+
+  .iphones-container img {
+    width: 90%;
+  }
+}
+
+$breakpoint-large: 1080px;
+@media (min-width: $breakpoint-large) {
+  h1 {
+    font-size: 42px;
+  }
+
+  .wrap {
+    width: 1060px;
+  }
+
+  .iphones-container img {
+    width: 75%;
+  }
+
+  .intro p {
+    font-size: 16px;
   }
 }
