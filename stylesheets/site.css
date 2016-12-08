@@ -487,24 +487,25 @@ footer {
   flex-direction: row;
   font-size: 12px;
   font-weight: 500;
-  line-height: 60px; }
+  line-height: 60px;
+  padding-bottom: 30px; }
 
-/* line 89, site.css.scss */
+/* line 90, site.css.scss */
 .copyright {
   flex: 1; }
 
-/* line 93, site.css.scss */
+/* line 94, site.css.scss */
 .footer-links {
   flex: 1;
   text-align: right; }
 
-/* line 98, site.css.scss */
+/* line 99, site.css.scss */
 .footer-links a {
   color: #424242;
   margin-left: 12px;
   text-decoration: none; }
 
-/* line 104, site.css.scss */
+/* line 105, site.css.scss */
 .footer-links a:hover {
   text-decoration: underline; }
 
@@ -522,36 +523,36 @@ footer {
   to {
     -webkit-transform: scale(1); } }
 @media (min-width: 768px) {
-  /* line 129, site.css.scss */
+  /* line 130, site.css.scss */
   body {
     padding-top: 60px; }
 
-  /* line 133, site.css.scss */
+  /* line 134, site.css.scss */
   .wrap {
     width: 90%; }
 
-  /* line 137, site.css.scss */
+  /* line 138, site.css.scss */
   header {
     position: fixed;
     top: 0;
     text-align: left; }
 
-  /* line 143, site.css.scss */
+  /* line 144, site.css.scss */
   h1 {
     font-size: 32px; }
 
-  /* line 147, site.css.scss */
+  /* line 148, site.css.scss */
   .welcome {
     text-align: left;
     padding: 30px 0; }
 
-  /* line 152, site.css.scss */
+  /* line 153, site.css.scss */
   .welcome > .wrap {
     display: flex;
     flex-direction: row;
     align-items: center; }
 
-  /* line 158, site.css.scss */
+  /* line 159, site.css.scss */
   .intro {
     display: inline-block;
     flex: 4;
@@ -559,27 +560,27 @@ footer {
     -webkit-animation-duration: .9s;
     margin: 0; }
 
-  /* line 166, site.css.scss */
+  /* line 167, site.css.scss */
   .iphones-container {
     flex: 3;
     text-align: right; }
 
-  /* line 171, site.css.scss */
+  /* line 172, site.css.scss */
   .iphones-container img {
     width: 90%; } }
 @media (min-width: 1080px) {
-  /* line 178, site.css.scss */
+  /* line 179, site.css.scss */
   h1 {
     font-size: 42px; }
 
-  /* line 182, site.css.scss */
+  /* line 183, site.css.scss */
   .wrap {
     width: 1060px; }
 
-  /* line 186, site.css.scss */
+  /* line 187, site.css.scss */
   .iphones-container img {
     width: 75%; }
 
-  /* line 190, site.css.scss */
+  /* line 191, site.css.scss */
   .intro p {
     font-size: 16px; } }
